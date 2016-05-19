@@ -1,0 +1,45 @@
+//
+//  Prefix.pch
+//  Project
+//
+//  Created by zhcpeng on 16/3/16.
+//  Copyright © 2016年 zhcpeng. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+//自动布局
+#import "Masonry.h"
+
+#import "UIImageView+WebCache.h"
+
+//#import "AFNetworking.h"
+
+#import "YYModel.h"
+
+//#import "UIViewExt.h"
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#define VAI(superview,view)  UIView *view = [[UIView alloc]init]; [superview addSubview:view];
+
+#define kHeightNavBar 64
+
+#define kScreenHeight  ([[UIScreen mainScreen] bounds].size.height)
+#define kScreenWidth ([[UIScreen mainScreen] bounds].size.width)
+
+#define XCarThemeChangedNotification @"XCarThemeChangedNotification"
+
+//从RGB转换成UIColor （16进制->10进制）
+#define kUIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
+#endif /* Prefix_pch */
