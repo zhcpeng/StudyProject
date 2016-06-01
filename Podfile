@@ -18,9 +18,10 @@ target ‘Project’ do
     pod 'YYText'
     pod 'YYImage'
     pod 'JSPatch'
-    pod 'YYCategories'
+    #    pod 'YYCategories'
     pod 'YYModel'
-    
+#    pod 'FBRetainCycleDetector'
+
 end
 
 

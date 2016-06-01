@@ -39,7 +39,14 @@
     [_itemList addObject:@"TextFieldViewController"];
     [_itemList addObject:@"UILabelMaxViewController"];
     [_itemList addObject:@"YYLabelViewController"];
+    [_itemList addObject:@"NSUserDefaultsTimeViewController"];
+    [_itemList addObject:@"NSPredicateViewController"];
     
+    
+    NSMutableDictionary *dict = nil;
+    NSString *str = nil;
+    dict = [@{@"111":str} mutableCopy];
+    dict[@"222"] = @"2222";
 }
 
 - (void)didReceiveMemoryWarning {
