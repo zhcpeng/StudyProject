@@ -41,12 +41,9 @@
     [_itemList addObject:@"YYLabelViewController"];
     [_itemList addObject:@"NSUserDefaultsTimeViewController"];
     [_itemList addObject:@"NSPredicateViewController"];
+    [_itemList addObject:@"ListViewController"];
     
-    
-    NSMutableDictionary *dict = nil;
-    NSString *str = nil;
-    dict = [@{@"111":str} mutableCopy];
-    dict[@"222"] = @"2222";
+
 }
 
 - (void)didReceiveMemoryWarning {

@@ -21,6 +21,7 @@ target ‘Project’ do
     #    pod 'YYCategories'
     pod 'YYModel'
 #    pod 'FBRetainCycleDetector'
+#    pod 'ReactiveCocoa'
 
 end
 
